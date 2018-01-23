@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays - list of data", "Arrays - list of data\Arrays - list of data.vcxproj", "{66A2C78B-2A6F-45FD-BA3F-989A99BC5647}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Data Member", "Data Member\Data Member.vcxproj", "{FCC40303-817A-4F1F-8A25-052673B19F3F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataMeber", "..\Section4_Object Oriented Coding\DataMeber\DataMeber.vcxproj", "{B446F48C-47DB-4046-82E1-FB33F17554C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,22 @@ Global
 		{66A2C78B-2A6F-45FD-BA3F-989A99BC5647}.Release|x64.Build.0 = Release|x64
 		{66A2C78B-2A6F-45FD-BA3F-989A99BC5647}.Release|x86.ActiveCfg = Release|Win32
 		{66A2C78B-2A6F-45FD-BA3F-989A99BC5647}.Release|x86.Build.0 = Release|Win32
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Debug|x64.ActiveCfg = Debug|x64
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Debug|x64.Build.0 = Debug|x64
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Debug|x86.Build.0 = Debug|Win32
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Release|x64.ActiveCfg = Release|x64
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Release|x64.Build.0 = Release|x64
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Release|x86.ActiveCfg = Release|Win32
+		{FCC40303-817A-4F1F-8A25-052673B19F3F}.Release|x86.Build.0 = Release|Win32
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Debug|x64.ActiveCfg = Debug|x64
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Debug|x64.Build.0 = Debug|x64
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Debug|x86.ActiveCfg = Debug|Win32
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Debug|x86.Build.0 = Debug|Win32
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Release|x64.ActiveCfg = Release|x64
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Release|x64.Build.0 = Release|x64
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Release|x86.ActiveCfg = Release|Win32
+		{B446F48C-47DB-4046-82E1-FB33F17554C8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
