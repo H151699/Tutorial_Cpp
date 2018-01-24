@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Person.h"
+#include <sstream>
 using namespace std;
 
 int main() {
@@ -20,3 +21,5 @@ int main() {
 	cin.get();
 	return 0;
 }
+
+
