@@ -100,23 +100,153 @@ public:
 		p->setNext(temp);
 		temp->Previous(p);
 		count++;
-
-
 	
 	}
 
+
+
+	// *******************************************************
+	// Remove the first element in the list 
+	//		 and Return a pointer to the element.
+	// *******************************************************
+	T *removeFirst() override {
 	
+		return first->getNext()->setNext(nullptr), first->getElement();
+
+	}
+	// *******************************************************
+	// Remove the Last element in the list 
+	//		 and Return a pointer to the element.
+	// *******************************************************
+	T *removeLast() override {
+
+		return last->getPrevious().setNext(nullptr), last->getElement();
+
+	}
+
+	
+	
+	// *******************************************************
+	// Return a Pointer to the first occurence 
+	//	of the give value in the list 
+	// *******************************************************
+
+	T *find(T *element) override{ 
+		
+		Node<T> *temp = first;
+
+		while (temp != nullptr) {
+
+			if (temp->getElement() == element) {
+
+				return temp->getElement();
+
+			} else {
+
+				temp = temp->getNext();
+			}
+		}
+
+		return nullptr;
+
+	}
+
+
+
+	// *******************************************************
+	// Remove the first occurence of the given value in the list
+	//		and return a pointer to the element.
+	// *******************************************************
+
+	T *remove(T *element) override{
+		
+		Node<T> *temp = first;		/// point to the first
+
+		while (temp != nullptr) {	/// check the tem(first) not Nullptr
+			
+			if (temp->getElement() == element) { /// if the firstNode-value == element
+				break;
+			}
+
+			temp = temp->getNext(); /// if not firstNodeValue != element, then keep search next.
+
+		}
+
+		if (first == nullptr) {
+			return nullptr;
+		}
+
+		if (temp->getNext() != nullptr) {
+
+			temp->getNext()->sePrivious(temp->getPrevious());
+		}
+
+		return temp->getElement();
 
 
 
 
+	}
+	// *******************************************************
+	// 	Return a pointer to the First node in the list
+	// *******************************************************
+		
+	Node<T> *getFirst() override { 
+		
+		return first;
+	
+	}
+
+	// *******************************************************
+	// 	Return a pointer to the Last node in the list
+	// *******************************************************
+
+	Node *getLast() override {
+		return last;
+	}
+
+
+	// *******************************************************
+	// 	Return True if the given value is found in the list, 
+	//          false otherwise
+	// *******************************************************
+
+	bool contains(T *element) override {
+		return true;
+	}
+
+
+	// *******************************************************
+	// 	Return True if the list is empty, eller false
+	// *******************************************************
+
+	bool isEmpty() override {
+		return count == 0
+	}
 
 
 
+	// *******************************************************
+	// Return the Number of elements in the List.
+	// *******************************************************
+
+	int size() override {
+		return count;
+	}
 
 
 
+	// *******************************************************
+	// diPlay
+	// *******************************************************
 
+	void display() {
+		Node<T> *temp = first;
+		while (temp != nullptr) {
+			cout << *temp->getElement() << endl;
+			temp = temp->getNext();
+		}
+	}
 
 
 
